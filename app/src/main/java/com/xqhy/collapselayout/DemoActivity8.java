@@ -32,7 +32,7 @@ public class DemoActivity8 extends AppCompatActivity {
         mBinding.appbarlayout.addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
             @Override
             public void onOffsetChanged(AppBarLayout appBarLayout, int verticalOffset) {
-                //verticalOffset是负值，移动的距离（像素）上移会越来越小，下移越累越大
+                //verticalOffset是负值，移动的距离（像素）上移会越来越小，下移越来越大
                 //appBarLayout.getTotalScrollRange() 总的可滑动的距离，不包括不可滑动的view高度
                 Log.e("TAG", verticalOffset+"");
                 Log.e("TAG", appBarLayout.getTotalScrollRange()+"");
